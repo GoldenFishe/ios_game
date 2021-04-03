@@ -7,15 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3A6A91C92618D93500C21237 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A6A91C82618D93500C21237 /* Player.swift */; };
+		3A6A91CE2618DB1600C21237 /* Enemy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A6A91CD2618DB1600C21237 /* Enemy.swift */; };
+		3A6A91DB2618F21B00C21237 /* laserSound.wav in Resources */ = {isa = PBXBuildFile; fileRef = 3A6A91DA2618F21B00C21237 /* laserSound.wav */; };
+		3A6A91E7261900E600C21237 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A6A91E5261900E600C21237 /* Assets.xcassets */; };
+		3A6A91F72619013000C21237 /* exploision.sks in Resources */ = {isa = PBXBuildFile; fileRef = 3A6A91F62619013000C21237 /* exploision.sks */; };
+		3A6A92042619042600C21237 /* Laser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A6A92032619042600C21237 /* Laser.swift */; };
 		3AF07A7A26165EC400EE489D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF07A7926165EC400EE489D /* AppDelegate.swift */; };
 		3AF07A7C26165EC400EE489D /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 3AF07A7B26165EC400EE489D /* GameScene.sks */; };
 		3AF07A7E26165EC400EE489D /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = 3AF07A7D26165EC400EE489D /* Actions.sks */; };
 		3AF07A8026165EC400EE489D /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF07A7F26165EC400EE489D /* GameScene.swift */; };
 		3AF07A8226165EC400EE489D /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF07A8126165EC400EE489D /* GameViewController.swift */; };
 		3AF07A8526165EC400EE489D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3AF07A8326165EC400EE489D /* Main.storyboard */; };
-		3AF07A8726165EC700EE489D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3AF07A8626165EC700EE489D /* Assets.xcassets */; };
 		3AF07A9226165EC700EE489D /* spacewarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF07A9126165EC700EE489D /* spacewarTests.swift */; };
 		3AF07A9D26165EC700EE489D /* spacewarUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF07A9C26165EC700EE489D /* spacewarUITests.swift */; };
+		3AF07AE726166B6700EE489D /* stars.sks in Resources */ = {isa = PBXBuildFile; fileRef = 3AF07AE626166B6700EE489D /* stars.sks */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +42,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3A6A91C82618D93500C21237 /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		3A6A91CD2618DB1600C21237 /* Enemy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enemy.swift; sourceTree = "<group>"; };
+		3A6A91DA2618F21B00C21237 /* laserSound.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = laserSound.wav; sourceTree = "<group>"; };
+		3A6A91E5261900E600C21237 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3A6A91F62619013000C21237 /* exploision.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = exploision.sks; sourceTree = "<group>"; };
+		3A6A92032619042600C21237 /* Laser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Laser.swift; sourceTree = "<group>"; };
 		3AF07A7626165EC400EE489D /* spacewar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = spacewar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3AF07A7926165EC400EE489D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3AF07A7B26165EC400EE489D /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
@@ -43,7 +55,6 @@
 		3AF07A7F26165EC400EE489D /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
 		3AF07A8126165EC400EE489D /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		3AF07A8426165EC400EE489D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		3AF07A8626165EC700EE489D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3AF07A8826165EC700EE489D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3AF07A8D26165EC700EE489D /* spacewarTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = spacewarTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3AF07A9126165EC700EE489D /* spacewarTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = spacewarTests.swift; sourceTree = "<group>"; };
@@ -51,6 +62,7 @@
 		3AF07A9826165EC700EE489D /* spacewarUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = spacewarUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3AF07A9C26165EC700EE489D /* spacewarUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = spacewarUITests.swift; sourceTree = "<group>"; };
 		3AF07A9E26165EC700EE489D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3AF07AE626166B6700EE489D /* stars.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = stars.sks; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,8 +119,14 @@
 				3AF07A7F26165EC400EE489D /* GameScene.swift */,
 				3AF07A8126165EC400EE489D /* GameViewController.swift */,
 				3AF07A8326165EC400EE489D /* Main.storyboard */,
-				3AF07A8626165EC700EE489D /* Assets.xcassets */,
+				3A6A91E5261900E600C21237 /* Assets.xcassets */,
+				3A6A91F62619013000C21237 /* exploision.sks */,
 				3AF07A8826165EC700EE489D /* Info.plist */,
+				3AF07AE626166B6700EE489D /* stars.sks */,
+				3A6A91C82618D93500C21237 /* Player.swift */,
+				3A6A91CD2618DB1600C21237 /* Enemy.swift */,
+				3A6A91DA2618F21B00C21237 /* laserSound.wav */,
+				3A6A92032619042600C21237 /* Laser.swift */,
 			);
 			path = spacewar;
 			sourceTree = "<group>";
@@ -236,8 +254,11 @@
 			files = (
 				3AF07A8526165EC400EE489D /* Main.storyboard in Resources */,
 				3AF07A7C26165EC400EE489D /* GameScene.sks in Resources */,
-				3AF07A8726165EC700EE489D /* Assets.xcassets in Resources */,
+				3AF07AE726166B6700EE489D /* stars.sks in Resources */,
+				3A6A91E7261900E600C21237 /* Assets.xcassets in Resources */,
+				3A6A91DB2618F21B00C21237 /* laserSound.wav in Resources */,
 				3AF07A7E26165EC400EE489D /* Actions.sks in Resources */,
+				3A6A91F72619013000C21237 /* exploision.sks in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,6 +283,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A6A91C92618D93500C21237 /* Player.swift in Sources */,
+				3A6A92042619042600C21237 /* Laser.swift in Sources */,
+				3A6A91CE2618DB1600C21237 /* Enemy.swift in Sources */,
 				3AF07A8026165EC400EE489D /* GameScene.swift in Sources */,
 				3AF07A8226165EC400EE489D /* GameViewController.swift in Sources */,
 				3AF07A7A26165EC400EE489D /* AppDelegate.swift in Sources */,

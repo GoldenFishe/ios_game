@@ -1,10 +1,3 @@
-//
-//  GameViewController.swift
-//  spacewar
-//
-//  Created by Anton on 01.04.2021.
-//
-
 import UIKit
 import SpriteKit
 import GameplayKit
