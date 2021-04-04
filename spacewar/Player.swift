@@ -14,9 +14,15 @@ class Player: SKSpriteNode {
     }
     
     public func attack() {
-        let laser = Laser();
+        let laserPosition = CGPoint(x: self.position.x, y: self.position.y + self.size.height / 2);
+        let laser = Laser(position: laserPosition);
         self.scene?.addChild(laser);
         laser.animate();
+    }
+    
+    public func changePosition(newPosition: CGPoint) {
+        self.position.x += newPosition.x;
+        self.position.y += newPosition.y;
     }
     
     required init?(coder aDecoder: NSCoder) {

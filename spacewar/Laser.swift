@@ -2,12 +2,12 @@ import SpriteKit
 
 class Laser: SKSpriteNode {
     public static let categoryBitMask: UInt32 = 2;
-    init() {
+    init(position: CGPoint) {
         let texture = SKTexture(imageNamed: "laser");
         let size = CGSize(width: 10, height: 20);
         let color = UIColor.white;
         super.init(texture: texture, color: color, size: size);
-        self.position = CGPoint(x: self.position.x, y: self.position.y + self.size.height / 2);
+        self.position = position;
         self.size = CGSize(width: 10, height: 20);
         self.physicsBody = SKPhysicsBody(rectangleOf: self.size);
         self.physicsBody?.isDynamic = true;

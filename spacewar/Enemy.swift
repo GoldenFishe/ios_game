@@ -1,13 +1,15 @@
 import SpriteKit
 
 class Enemy: SKSpriteNode {
+    
     public static let categoryBitMask: UInt32 = 1;
-    init() {
+    
+    init(position: CGPoint) {
         let texture = SKTexture(imageNamed: "alien");
         let size = CGSize(width: 100, height: 100);
         let color = UIColor.white;
         super.init(texture: texture, color: color, size: size);
-        self.position = CGPoint(x: 0, y: 200);
+        self.position = position;
         self.physicsBody = SKPhysicsBody(rectangleOf: self.size);
         self.physicsBody?.isDynamic = true;
         self.physicsBody?.categoryBitMask = Enemy.categoryBitMask;
@@ -15,12 +17,23 @@ class Enemy: SKSpriteNode {
         self.physicsBody?.collisionBitMask = Laser.categoryBitMask;
     }
     
+    public func move() {
+        let moveAction = SKAction.moveTo(y: -1000, duration: 5);
+        let destroyAction = SKAction.removeFromParent();
+        let actions = SKAction.sequence([moveAction, destroyAction]);
+        self.run(actions);
+    }
+    
     public func destroy() {
         let expliosion = SKEmitterNode(fileNamed: "exploision");
         expliosion?.position = self.position;
-        let destroyAction = SKAction.removeFromParent();
-        
+        let exploisionSoundAction = SKAction.playSoundFileNamed("exploisionSound", waitForCompletion: false);
+        let exploisionPauseAction = SKAction.wait(forDuration: 0.2);
+        let exploisionDestroyAction = SKAction.removeFromParent();
+        let exploisionActions = [exploisionSoundAction, exploisionPauseAction, exploisionDestroyAction]
+        expliosion?.run(SKAction.sequence(exploisionActions));
         self.scene?.addChild(expliosion!);
+        self.removeFromParent();
     }
     
     required init?(coder aDecoder: NSCoder) {
